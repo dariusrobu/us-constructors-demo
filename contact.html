@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT | Constructors | Get a Precision Quote</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">
+            <img src="./imgs/logo.png" alt="Constructors Logo">
+        </a>
+        <nav class="desktop-nav">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="header-cta">
+            <a href="contact.html" class="btn btn-primary">Get a Quote</a>
+        </div>
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <nav class="mobile-nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="btn btn-primary" style="margin-top: 20px;">Get a Quote</a>
+    </nav>
+
+    <main>
+        <div class="bg-blur bg-blur-1"></div>
+        <div class="bg-blur bg-blur-2"></div>
+
+        <div class="page-hero" style="background-image: url('./imgs/contact-bg.png');">
+            <h1>Contact Us</h1>
+        </div>
+
+        <section>
+            <div class="container">
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h4 style="color: var(--primary); font-weight: 800; letter-spacing: 0.2em; margin-bottom: 24px; text-transform: uppercase;">Inquiry</h4>
+                        <h2>Ground Your Vision.</h2>
+                        <p style="color: rgba(255,255,255,0.6); margin-bottom: 60px;">Whether planning a massive industrial complex or a custom residential build, we provide the precision you need.</p>
+                        
+                        <div style="margin-bottom: 32px;">
+                            <h4 style="font-size: 0.8rem; opacity: 0.5;">Our Headquarters</h4>
+                            <p style="color: var(--white); font-weight: 600;">123 Industrial Way, Caterpillar City, TX 75001</p>
+                        </div>
+                        
+                        <div style="margin-bottom: 32px;">
+                            <h4 style="font-size: 0.8rem; opacity: 0.5;">Email Us</h4>
+                            <p style="color: var(--white); font-weight: 600;">info@constructors.com</p>
+                        </div>
+                        
+                        <div>
+                            <h4 style="font-size: 0.8rem; opacity: 0.5;">Call Us</h4>
+                            <p style="color: var(--white); font-weight: 600;">(555) 123-4567</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <form action="#">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" placeholder="john@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="project">Project Type</label>
+                                <input type="text" id="project" placeholder="e.g., Commercial Grading" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" rows="5" placeholder="Tell us about your project requirements..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Inquiry</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container" style="text-align: center;">
+                <h4 style="color: var(--primary); margin-bottom: 16px;">Locations</h4>
+                <h2>Serving the Entire Continental US.</h2>
+                <div style="margin-top: 60px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px;">
+                    <div>
+                        <h3 style="font-size: 1.1rem;">Texas Hub</h3>
+                        <p style="font-size: 0.9rem;">Dallas / Austin / Houston</p>
+                    </div>
+                    <div>
+                        <h3 style="font-size: 1.1rem;">Arizona Hub</h3>
+                        <p style="font-size: 0.9rem;">Phoenix / Scottsdale</p>
+                    </div>
+                    <div>
+                        <h3 style="font-size: 1.1rem;">Florida Hub</h3>
+                        <p style="font-size: 0.9rem;">Miami / Orlando / Tampa</p>
+                    </div>
+                    <div>
+                        <h3 style="font-size: 1.1rem;">Nevada Hub</h3>
+                        <p style="font-size: 0.9rem;">Las Vegas / Reno</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <a href="index.html" class="footer-logo">
+                    <img src="./imgs/logo.png" alt="Constructors Logo">
+                </a>
+                <p style="color: rgba(255,255,255,0.6); margin-top: 20px;">The premier choice for excavation and site preparation across the United States. Engineering the ground for the future.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul class="footer-links">
+                    <li><a href="services.html">Site Grading</a></li>
+                    <li><a href="services.html">Demolition</a></li>
+                    <li><a href="services.html">Excavation</a></li>
+                    <li><a href="services.html">Trenching</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p style="color: rgba(255,255,255,0.6); font-size: 0.9rem;">123 Industrial Way<br>Caterpillar City, TX 75001<br><br>info@constructors.com<br>(555) 123-4567</p>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 CONSTRUCTORS INC. ALL RIGHTS RESERVED.</p>
+            <p>DESIGN BY PRINCIPAL ARCHITECT</p>
+        </div>
+    </footer>
+
+</body>
+</html>
