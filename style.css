@@ -570,14 +570,14 @@ footer {
     left: 0;
     width: 100%;
     height: 100vh;
-    background: rgba(10, 15, 27, 0.95);
-    backdrop-filter: blur(30px);
-    -webkit-backdrop-filter: blur(30px);
+    background: rgba(10, 15, 27, 0.98);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
     z-index: 999;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 32px;
+    gap: 40px;
 }
 
 .mobile-nav.active {
@@ -585,35 +585,61 @@ footer {
 }
 
 .mobile-nav a {
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 8vw, 2.5rem);
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 0.1em;
+    color: var(--white);
+    opacity: 0.8;
+}
+
+.mobile-nav a:hover {
+    opacity: 1;
+    color: var(--primary);
 }
 
 .menu-toggle {
     display: none;
     flex-direction: column;
-    gap: 8px;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
     cursor: pointer;
     z-index: 1001;
 }
 
 .menu-toggle span {
-    width: 30px;
+    width: 100%;
     height: 2px;
     background: var(--white);
     transition: var(--transition);
 }
 
+/* Hamburger Animation to X */
+.menu-toggle span.active:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.menu-toggle span.active:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle span.active:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
 @media (max-width: 1024px) {
     header {
-        padding: 15px 25px;
-        border-radius: 30px;
+        padding: 20px 5%;
+        border-radius: 0; /* Align with full-width top bar */
+    }
+
+    header.scrolled {
+        padding: 15px 5%;
     }
 
     .desktop-nav, .header-cta {
-        display: none;
+        display: none !important;
     }
 
     .menu-toggle {
